@@ -1,82 +1,80 @@
-import Head from 'next/head'
+import Head from "next/head";
+import { PlusCircleIcon } from "@heroicons/react/solid";
 
 export default function Home() {
+  const addList = () => {
+    console.log("Clickedd");
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="  px-[10px] h-[95vh] bg-white flex items-center justify-center w-full">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+      <main className="relative w-[600px] h-[90vh] p-[20px] shadow-xl rounded-3xl bg-blue-400">
+        <PlusCircleIcon
+          onClick={addList}
+          className="absolute bg-white bg-opacity-80 bottom-[20px] w-20 h-20 right-[20px] text-blue-800 shadow-2xl rounded-full "
+        />
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="">
+          <h1 className="text-[60px] my-font font-thin text-center text-white ">
+            Todo List
+          </h1>
+          <p className="text-xs font-semibold tracking-wider text-center text-white my-font opacity-80 ">
+            remember your tasks
+          </p>
+        </div>
+        {/* input field */}
+        <div className="w-full flex items-center justify-center py-[20px]">
+          <input
+            type="text"
+            placeholder="add a task..."
+            className="w-3/4 border-none outline-none rounded-3xl text-[17px] p-[20px] bg-blue-300 text-white placeholder-white placeholder-opacity-70 focus:ring focus:ring-blue-500 focus:ring-offset-4 focus:ring-offset-blue-400 caret-blue-500"
+          />
+        </div>
+        {/* Lists */}
+        <div className="flex flex-col w-full gap-2 overflow-y-scroll my-font max-h-[450px] scrollbar-hide">
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
+          <div className="w-full bg-white rounded-xl p-[20px] shadow-lg font-bold text-gray-600 text-[17px] ">
+            <div>task1</div>
+          </div>
         </div>
       </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }
