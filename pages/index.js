@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { PlusCircleIcon } from "@heroicons/react/solid";
-import List from "../components/styles/list";
+import List from "../components/List";
 import { useState } from "react";
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className="  px-[10px] h-[95vh] bg-white flex items-center justify-center w-full">
       <Head>
-        <title>Create Next App</title>
+        <title>Simple Todo App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -68,6 +68,7 @@ export default function Home() {
           })}
         </div>
       </main>
+      <p className="my-font tracking-widest absolute bottom-[10px] font-bold text-gray-400 text-sm">©️ Made by <a href="https://github.com/objectorienteddev07">Ayan Ansari</a> || V.01</p>
     </div>
   );
 }
